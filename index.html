@@ -33,31 +33,7 @@
 
       <section>
         <h1>CODES and REFRENCES</h1>
-
-        <h2>selected readings for future reference...</h2>
-        <ul>
-          <li><a href="http://msp.ucsd.edu/techniques/latest/book.pdf">The Theory and Technique of Electronic Music</a> Written by <a href="http://msp.ucsd.edu/">Millar Pucket</a></li>
-          <li><a href="http://www.simulation-argument.com/simulation.pdf">The Simulation Arguement</a> Written by <a href="http://www.nickbostrom.com/">Nick Bostrom</a></li>
-          <li><a href="http://eloquentjavascript.net/Eloquent_JavaScript.pdf">Eloquent JavaScript</a> Written by <a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a></li>
-          <li><a href="http://www.pd-tutorial.com/english/index.html">Programming Electronic Music in Pd</a> Written by <a href="http://www.kreidler-net.de/">Johannes Kreidler</a></li>
-        </ul><br>
-
-        <h2>making chrome enter an unwakable dream state</h2>
-
-        <p>Do browsers dream of electric sheep?</p>
-        
-<pre>
-function dream(milliseconds) {
-  var start = new Date().getTime();
-  console.log("zzz...off to dreamland :)")
-  for (var i = 0; i &lt 1e7; i++) {
-  if ((new Date().getTime() - start) &lt milliseconds){
-  break;}
-  }
-}
-</pre>
-
-        <h2>make_all_the_notes</h2>
+<h2>make_all_the_notes</h2>
 
         <img src="images/ae26c3122f6b0e7820ae01fa0f63bf71.png" />  
         <p>fun with midi math in ruby </p>
@@ -84,10 +60,22 @@ end
 make_all_the_notes
 
 </pre>
+        
 
+        <h2>making chrome enter an unwakable dream state</h2>
 
-
-
+        <p>Do browsers dream of electric sheep?</p>
+        
+<pre>
+function dream(milliseconds) {
+  var start = new Date().getTime();
+  console.log("zzz...off to dreamland :)")
+  for (var i = 0; i &lt 1e7; i++) {
+  if ((new Date().getTime() - start) &lt milliseconds){
+  break;}
+  }
+}
+</pre>
         <h2>o.dots</h2>
 
         <p>I have been having a lot of fun with webkitAudioContext... this .js sine wave osc generator seems to always end up in my /javascripts :)</p>
@@ -121,6 +109,14 @@ function oscillatorOn(frequncy, duration, volume, fade) {
           gainNode.gain.value -= fade : null
           }, 50);
         </pre>
+
+        <h2>selected readings for future reference...</h2>
+        <ul>
+          <li><a href="http://msp.ucsd.edu/techniques/latest/book.pdf">The Theory and Technique of Electronic Music</a> Written by <a href="http://msp.ucsd.edu/">Millar Pucket</a></li>
+          <li><a href="http://www.simulation-argument.com/simulation.pdf">The Simulation Arguement</a> Written by <a href="http://www.nickbostrom.com/">Nick Bostrom</a></li>
+          <li><a href="http://eloquentjavascript.net/Eloquent_JavaScript.pdf">Eloquent JavaScript</a> Written by <a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a></li>
+          <li><a href="http://www.pd-tutorial.com/english/index.html">Programming Electronic Music in Pd</a> Written by <a href="http://www.kreidler-net.de/">Johannes Kreidler</a></li>
+        </ul><br>
         
 
         <h1>MUSICAL Things</h1>
