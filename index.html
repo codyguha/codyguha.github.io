@@ -91,6 +91,12 @@ make_all_the_notes
         <h2>o.dots</h2>
 
         <p>I have been having a lot of fun with webkitAudioContext... this .js sine wave osc generator seems to always end up in my /javascripts :)</p>
+        <pre><input id="rangeValue1" type="text" size="6" value="44"></pre>
+
+        <p><input id="slider1" type="range" min="44" max="440" step="0.00001" onchange="printValue('slider1','rangeValue1')" value="44"></p>
+
+        <p>Turn up your headphones and move the slider to hear it.</p>
+
 
         <pre>
 var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
@@ -115,9 +121,7 @@ function oscillatorOn(frequncy, duration, volume, fade) {
           gainNode.gain.value -= fade : null
           }, 50);
         </pre>
-        <p><input id="slider1" type="range" min="44" max="440" step="0.00001" onchange="printValue('slider1','rangeValue1')">
-        <input id="rangeValue1" type="text" size="6" value="44">
-        </p>
+        
 
         <h1>MUSICAL Things</h1>
 
