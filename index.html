@@ -75,11 +75,11 @@ function dream(milliseconds) {
 <h2>--o.dots</h2>
 
   <p>I have been having a lot of fun with webkitAudioContext... this .js sine wave osc generator seems to always end up in my javascripts folder...</p>
-  <input id="rangeValue1" type="text" size="10" value="44">
+  <br>
+  <p><input id="rangeValue1" type="text" size="10" value="44"></p>
   <br>
   <p><input id="slider1" type="range" min="44" max="440" step="0.000000001" onchange="printValue('slider1','rangeValue1')" value="44"></p>
-
-  <p><em>Turn up headphones and move slider</em>.</p>
+  <p><small><em>Turn up headphones and move slider</em>.</small></p>
 
   <pre>
 var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
