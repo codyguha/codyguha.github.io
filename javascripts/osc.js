@@ -1,10 +1,14 @@
-function printValue(sliderID, textbox) {
-  var x = document.getElementById(textbox);
+var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+var gainNode
+var o
+
+function printValue(sliderID, rangeValue1) {
+  var x = document.getElementById(rangeValue1);
   var y = document.getElementById(sliderID);
   x.value = y.value;
   oscNote(y.value)
 }
-window.onload = function() { printValue('slider1', 'rangeValue1'); printValue('slider2', 'rangeValue2'); printValue('slider3', 'rangeValue3'); printValue('slider4', 'rangeValue4'); }
+window.onload = function() { printValue('slider1', 'rangeValue1'); }
 
 
 
