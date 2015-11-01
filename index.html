@@ -19,46 +19,36 @@
         <p>.audioEnthusiast</p>
         <p class="view"><a href="http://github.com/codyguha"><small>
         codyguha.github.io</small></a></p>
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download Resume<strong>PDF</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
       <section>
         <h1>Fun Little o.dots</h1>
 
-        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
-
-        
-
-        <p>fun little osc</p>
+        <p>my very first sine osc synth for browsers</p>
 
         <pre>
-        var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
-        var gainNode
-        var o # oscillator!!!
-        var frequncy  # note frequencies
-        var duration  # note legnth
-        var volume    # note volume
-        var fade      # note fade out 
+var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+var gainNode
+var o # oscillator!!!
+var frequncy  # note frequencies
+var duration  # note legnth
+var volume    # note volume
+var fade      # note fade out 
 
-        function osc_note(frequncy, duration, volume, fade) { 
-          var o = audioCtx.createOscillator();
-          var gainNode = audioCtx.createGain();
-          o.connect(gainNode);
-          gainNode.connect(audioCtx.destination);
-          o.frequency.value = freq;
-          gainNode.gain.value = volume;
-          o.start();
-          o.stop(audioCtx.currentTime + duration);
-          setInterval(function() {
-            gainNode.gain.value > 0.001 ? 
-            gainNode.gain.value -= fade : null
-            }, 50);
+function osc_note(frequncy, duration, volume, fade) { 
+  var o = audioCtx.createOscillator();
+  var gainNode = audioCtx.createGain();
+  o.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+  o.frequency.value = freq;
+  gainNode.gain.value = volume;
+  o.start();
+  o.stop(audioCtx.currentTime + duration);
+  setInterval(function() {
+    gainNode.gain.value > 0.001 ? 
+    gainNode.gain.value -= fade : null
+    }, 50);
         </pre>
-
-
+        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
       </section>
       <footer>
         <p><small>Sponsered by <a href="http://www.lighthouselabs.ca/">LighthouseLabs</a></small></p>
