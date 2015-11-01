@@ -78,8 +78,10 @@ function dream(milliseconds) {
   <br>
   <p><input id="rangeValue1" type="text" size="10" value="44"></p>
   <br>
-  <p><input id="slider1" type="range" min="44" max="440" step="0.0000000000001" onchange="printValue('slider1','rangeValue1')" value="44"></p>
-  <p><small><em>Turn up headphones and move slider</em>.</small></p>
+  <p><input id="slider1" type="range" min="44" max="440" step="0.0000000000001" onchange="printValue('slider1','rangeValue1')" value="44"><br>
+  <small><em>Turn up headphones and move slider</em>.</small>
+  </p>
+  
 
   <pre>
 var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
