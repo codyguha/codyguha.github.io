@@ -114,7 +114,7 @@ function oscillatorOn(frequncy, duration, volume, fade) {
           gainNode.gain.value -= fade : null
           }, 50);
         </pre>
-        <p><input id="slider1" type="range" min="14" max="1000" step="0.00001" onchange="printValue('slider1','rangeValue1')" default="3">
+        <p><input id="slider1" type="range" min="14" max="1000" step="0.00001" onchange="printValue('slider1','rangeValue1')" value="40">
         <input id="rangeValue1" type="text" size="2"></p>
 
         <h1>MUSICAL Things</h1>
@@ -153,7 +153,7 @@ Oh, right: the ‘bling’… Guest appearances by some of Canada’s finest: To
   var x = document.getElementById(textbox);
   var y = document.getElementById(sliderID);
   x.value = y.value;
-  oscNote(y.value)
+  oscNote(y.value);
 }
 window.onload = function() { printValue('slider1', 'rangeValue1'); }
   </script>
