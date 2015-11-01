@@ -21,27 +21,33 @@
         codyguha.github.io</small></a></p>
       </header>
       <section>
+        <h2>many many promethius chords...</h2>
+
+        <p><a href="https://www.youtube.com/watch?v=DWp4FdvtIIg">
+        the duke playing around with promethius</a></p>
+
+        <h1>code snippits...</h1>
+
         <h2>make_all_the_notes</h2>
 
-        <p>MAKE ALL THE NOTES!!! <small>with ruby</small></p>
+        <p>MAKE ALL THE NOTES!!! <small>log function with ruby</small></p>
 
 <pre>
+
 def make_all_the_notes
-  note_array = []
-  note_array = create_note(0,127)
-    (note_array[0]..note_array[127]).each do |midi_note|
-      generate_frequencies(midi_note)
-    end
+  (0..127).each do |midi_note|
+    generate_frequencies(midi_note)
+  end
 end
 
 def generate_frequencies(midi_note)
   if midi_note == 0
-     frequency = 8.1757989156
+     @frequency = 8.1757989156
      print frequency
   else  
-    f = 2**((midi_note.to_f-69)/12.to_f)
-    frequency = f*440
-    print frequency
+     f = 2**((midi_note.to_f-69)/12.to_f)  # woah woah woah,
+     frequency = f*440                     # loggin it
+     print frequency                       # silly perfect A's
   end
 end
 
