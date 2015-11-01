@@ -114,7 +114,7 @@ function oscillatorOn(frequncy, duration, volume, fade) {
           gainNode.gain.value -= fade : null
           }, 50);
         </pre>
-        <p><input id="slider1" type="range" min="14" max="280" step="0.00001" onchange="printValue('slider1','rangeValue1')" value="0">
+        <p><input id="slider1" type="range" min="44" max="440" step="0.00001" onchange="printValue('slider1','rangeValue1')">
         <input id="rangeValue1" type="text" size="2"></p>
 
         <h1>MUSICAL Things</h1>
@@ -149,15 +149,5 @@ Oh, right: the ‘bling’… Guest appearances by some of Canada’s finest: To
     </div>
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/osc.js"></script>
-    <script>$( document ).ready(function() {
-    function printValue(sliderID, textbox) {
-  var x = document.getElementById(textbox);
-  var y = document.getElementById(sliderID);
-  x.value = y.value;
-  oscNote(y.value);
-}
-});
-window.onload = function() { printValue('slider1', 'rangeValue1'); }
-  </script>
   </body>
 </html>
