@@ -39,7 +39,22 @@
           <li><a href="http://www.simulation-argument.com/simulation.pdf">The Simulation Arguement</a> Written by <a href="http://www.nickbostrom.com/">Nick Bostrom</a></li>
           <li><a href="http://eloquentjavascript.net/Eloquent_JavaScript.pdf">Eloquent JavaScript</a> Written by <a href="https://marijnhaverbeke.nl/">Marijn Haverbeke</a></li>
           <li><a href="http://www.pd-tutorial.com/english/index.html">Programming Electronic Music in Pd</a> Written by <a href="http://www.kreidler-net.de/">Johannes Kreidler</a></li>
-        </ul>
+        </ul><br>
+
+        <h2>making chrome enter an unwakable dream state</h2>
+
+        <p>Do browsers dream of electric sheep?</p>
+        
+<pre>
+function dream(milliseconds) {
+  var start = new Date().getTime();
+  console.log("zzz...off to dreamland :)")
+  for (var i = 0; i &lt 1e7; i++) {
+  if ((new Date().getTime() - start) &lt milliseconds){
+  break;}
+  }
+}
+<pre>
 
         <h2>make_all_the_notes</h2>
 
