@@ -19,6 +19,8 @@
         <p>.audioEnthusiast</p>
         <p class="view"><a href="http://github.com/codyguha"><small>
         codyguha.github.io</small></a></p>
+        <a href="mailto:tom@github.com"><small>
+        aalo.guha@gmail.com</small></a>
       </header>
       <section>
         <h1>MUSIC</h1>
@@ -54,7 +56,7 @@ def generate_frequencies(midi_note)
      @frequency = 8.1757989156
      print frequency
   else  
-     f = 2**((midi_note.to_f-69)/12.to_f)  # woah woah woah,
+     f = 2**((midi_note.to_f-69)/12)  # woah woah woah,
      frequency = f*440                     # loggin it
      print frequency                       # silly perfect A's
   end
