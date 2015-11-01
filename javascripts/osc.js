@@ -3,9 +3,7 @@ var gainNode
 var o
 $(document).ready(function printValue(sliderID, textbox) {
   var x = document.getElementById(textbox);
-  var y = document.getElementById(sliderID);
-  x.value = y.value;
-  oscNote(y.value);
+  oscNote(x.value);
 });
 // window.onload = function() { printValue('slider1', 'rangeValue1'); }
 function oscNote(freq) { 
