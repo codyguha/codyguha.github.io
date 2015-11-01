@@ -1,6 +1,14 @@
 var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
 var gainNode
 var o
+
+function printValue(sliderID, textbox) {
+        var x = document.getElementById(textbox);
+        var y = document.getElementById(sliderID);
+        x.value = y.value;
+        oscNote(y.value);
+        };
+
 function oscNote(freq) { 
   var o = audioCtx.createOscillator();
   var gainNode = audioCtx.createGain();
