@@ -2,8 +2,8 @@ var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
 var gainNode
 var o
 
-function printValue(sliderID, rangeValue1) {
-  var x = document.getElementById(rangeValue1);
+function printValue(sliderID, textbox) {
+  var x = document.getElementById(textbox);
   var y = document.getElementById(sliderID);
   x.value = y.value;
   oscNote(y.value)
