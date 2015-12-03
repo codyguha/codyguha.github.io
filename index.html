@@ -97,10 +97,9 @@ function oscillatorOn(frequncy, duration, volume, fade) {
       o.frequency.value = freq;
       o.start();
       o.stop(audioCtx.currentTime + duration);
-        setInterval(function() {
-          gainNode.gain.value > 0.001 ? 
-          gainNode.gain.value -= fade : null
-          }, 50);
+      setInterval(function() {
+        gainNode.gain.value > 0.001 ? gainNode.gain.value -= fade : null
+      }, 50);
   </pre>
 <br>
 <h2>--weird fishes/arpeggi</h2>
